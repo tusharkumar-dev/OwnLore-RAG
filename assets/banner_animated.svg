@@ -1,0 +1,166 @@
+<svg viewBox="0 0 1280 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">OwnLore-RAG</title>
+  <desc id="desc">Chat with your own documents, privately and on your terms.</desc>
+
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090C10"/>
+      <stop offset="55%" stop-color="#101A20"/>
+      <stop offset="100%" stop-color="#152726"/>
+    </linearGradient>
+    <radialGradient id="glowTeal" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#3FA796" stop-opacity="0.20"/>
+      <stop offset="100%" stop-color="#3FA796" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowAmber" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#C97B4A" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="#C97B4A" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grain" width="5" height="5" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="0.5" fill="#ffffff" opacity="0.02"/>
+    </pattern>
+    <clipPath id="frame">
+      <rect width="1280" height="320"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <!-- background -->
+    <rect width="1280" height="320" fill="url(#bg)"/>
+    <rect width="1280" height="320" fill="url(#grain)"/>
+    <circle cx="960" cy="150" r="240" fill="url(#glowTeal)"/>
+    <circle cx="1058" cy="72" r="130" fill="url(#glowAmber)"/>
+
+    <!-- (divider removed — illustration already reads as its own section) -->
+
+    <!-- ===== LEFT: wordmark block ===== -->
+    <text x="62" y="52" font-family="Arial, Helvetica, sans-serif" font-size="15.5" letter-spacing="3.5" fill="#9FC7BD" font-weight="700">SELF-HOSTED &#8201;&#183;&#8201; PRIVATE RAG</text>
+    <line x1="63" y1="68" x2="272" y2="68" stroke="#3FA796" stroke-opacity="0.4" stroke-width="1"/>
+
+    <!-- title -->
+    <text x="63" y="150" font-family="Georgia, 'Times New Roman', serif" font-size="68" fill="#EDE4D3" font-weight="700">OwnLore<tspan fill="#C97B4A">-RAG</tspan></text>
+
+    <!-- tagline -->
+    <text x="63" y="206" font-family="Arial, Helvetica, sans-serif" font-size="18.5" font-weight="600" fill="#D9E1E4">Self-Hosted AI Assistant for Your PDFs, Documents &amp; Knowledge Base</text>
+
+    <!-- badges -->
+    <g font-family="Arial, Helvetica, sans-serif" font-size="12.5" font-weight="700">
+      <g>
+        <rect x="62" y="254" width="170" height="29" rx="14.5" fill="#3FA796" fill-opacity="0.12" stroke="#3FA796" stroke-opacity="0.55"/>
+        <path d="M76,268 L80,272 L88,263" fill="none" stroke="#3FA796" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <text x="98" y="273" fill="#BFE3D8">8 LLM Providers</text>
+      </g>
+      <g>
+        <rect x="244" y="254" width="175" height="29" rx="14.5" fill="#C97B4A" fill-opacity="0.12" stroke="#C97B4A" stroke-opacity="0.55"/>
+        <path d="M258,268 L262,272 L270,263" fill="none" stroke="#C97B4A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <text x="280" y="273" fill="#EAC8AE">Local + Cloud</text>
+      </g>
+      <g>
+        <rect x="431" y="254" width="215" height="29" rx="14.5" fill="#8FB6AC" fill-opacity="0.10" stroke="#8FB6AC" stroke-opacity="0.45"/>
+        <path d="M445,268 L449,272 L457,263" fill="none" stroke="#8FB6AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <text x="467" y="273" fill="#C6D6D1">Cross-Encoder Reranking</text>
+      </g>
+    </g>
+
+    <!-- ===== RIGHT: signature illustration — the dandelion mark ===== -->
+    <g transform="translate(880,-48) scale(3.4)">
+
+      <!-- gentle wind sway on stem + puff -->
+      <g>
+        <animateTransform attributeName="transform" type="rotate"
+          values="-2 46 108;2.5 46 108;-2 46 108"
+          dur="4s" repeatCount="indefinite" calcMode="spline"
+          keySplines="0.45 0 0.55 1;0.45 0 0.55 1"/>
+
+        <!-- stem -->
+        <path d="M46,88 Q44,98 47,108" fill="none" stroke="#8C7A52" stroke-width="2" stroke-linecap="round" stroke-opacity="0.7"/>
+
+        <!-- puff: radiating seed lines -->
+        <g stroke="#5CC4B0" stroke-width="1.4" stroke-linecap="round" stroke-opacity="0.85">
+          <line x1="50.0" y1="68.6" x2="65.8" y2="71.0"/>
+          <line x1="49.4" y1="70.1" x2="63.1" y2="78.3"/>
+          <line x1="48.4" y1="71.2" x2="57.9" y2="84.1"/>
+          <line x1="47.0" y1="71.9" x2="50.8" y2="87.4"/>
+          <line x1="45.4" y1="72.0" x2="43.0" y2="87.8"/>
+          <line x1="43.9" y1="71.4" x2="35.7" y2="85.1"/>
+          <line x1="42.8" y1="70.4" x2="29.9" y2="79.9"/>
+          <line x1="42.1" y1="69.0" x2="26.6" y2="72.8"/>
+          <line x1="42.0" y1="67.4" x2="26.2" y2="65.0"/>
+          <line x1="42.6" y1="65.9" x2="28.9" y2="57.7"/>
+          <line x1="43.6" y1="64.8" x2="34.1" y2="51.9"/>
+          <line x1="45.0" y1="64.1" x2="41.2" y2="48.6"/>
+          <line x1="46.6" y1="64.0" x2="49.0" y2="48.2"/>
+          <line x1="48.1" y1="64.6" x2="56.3" y2="50.9"/>
+        </g>
+        <!-- tiny tuft dots at a few tips: each one occasionally lets go -->
+        <g fill="#5CC4B0" fill-opacity="0.9">
+          <circle cx="65.8" cy="71.0" r="1.4">
+            <animate attributeName="opacity" values="1;1;0;0;1" keyTimes="0;0.55;0.6;0.98;1" dur="3s" begin="0s" repeatCount="indefinite"/>
+          </circle>
+          <circle cx="50.8" cy="87.4" r="1.4"/>
+          <circle cx="35.7" cy="85.1" r="1.4">
+            <animate attributeName="opacity" values="1;1;0;0;1" keyTimes="0;0.55;0.6;0.98;1" dur="4s" begin="1.3s" repeatCount="indefinite"/>
+          </circle>
+          <circle cx="26.2" cy="65.0" r="1.4"/>
+          <circle cx="41.2" cy="48.6" r="1.4">
+            <animate attributeName="opacity" values="1;1;0;0;1" keyTimes="0;0.55;0.6;0.98;1" dur="3.6s" begin="2.4s" repeatCount="indefinite"/>
+          </circle>
+          <circle cx="56.3" cy="50.9" r="1.4"/>
+        </g>
+        <circle cx="46" cy="68" r="3" fill="#38A190"/>
+      </g>
+
+      <!-- drifting seeds, blowing toward upper right, looping -->
+      <g stroke="#8C7A52" stroke-width="1" stroke-opacity="0.35" fill="none">
+        <path id="seedPathA" d="M64,60 Q74,50 82,42"/>
+        <path id="seedPathB" d="M70,74 Q84,66 94,56"/>
+        <path id="seedPathC" d="M60,44 Q70,36 76,26"/>
+      </g>
+      <g stroke-linecap="round">
+        <!-- seed A: released from puff, drifts off to the right -->
+        <g>
+          <animateMotion dur="3s" begin="0s" repeatCount="indefinite" rotate="auto">
+            <mpath href="#seedPathA"/>
+          </animateMotion>
+          <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.12;0.75;1" dur="3s" begin="0s" repeatCount="indefinite"/>
+          <circle r="1.6" fill="#C97B4A"/>
+          <g stroke="#C97B4A" stroke-width="1.1" stroke-opacity="0.85">
+            <line x1="0" y1="0" x2="-5" y2="-6"/>
+            <line x1="0" y1="0" x2="1" y2="-8"/>
+            <line x1="0" y1="0" x2="6" y2="-5"/>
+            <line x1="0" y1="0" x2="7" y2="2"/>
+            <line x1="0" y1="0" x2="-3" y2="6"/>
+          </g>
+        </g>
+        <!-- seed B -->
+        <g>
+          <animateMotion dur="4s" begin="1.3s" repeatCount="indefinite" rotate="auto">
+            <mpath href="#seedPathB"/>
+          </animateMotion>
+          <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.12;0.75;1" dur="4s" begin="1.3s" repeatCount="indefinite"/>
+          <circle r="1.4" fill="#5CC4B0"/>
+          <g stroke="#5CC4B0" stroke-width="1" stroke-opacity="0.85">
+            <line x1="0" y1="0" x2="-4" y2="-5"/>
+            <line x1="0" y1="0" x2="1" y2="-6"/>
+            <line x1="0" y1="0" x2="5" y2="-3"/>
+            <line x1="0" y1="0" x2="4" y2="4"/>
+          </g>
+        </g>
+        <!-- seed C -->
+        <g>
+          <animateMotion dur="3.6s" begin="2.4s" repeatCount="indefinite" rotate="auto">
+            <mpath href="#seedPathC"/>
+          </animateMotion>
+          <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.12;0.75;1" dur="3.6s" begin="2.4s" repeatCount="indefinite"/>
+          <circle r="1.4" fill="#5CC4B0"/>
+          <g stroke="#5CC4B0" stroke-width="1" stroke-opacity="0.85">
+            <line x1="0" y1="0" x2="-4" y2="-4"/>
+            <line x1="0" y1="0" x2="2" y2="-6"/>
+            <line x1="0" y1="0" x2="5" y2="-2"/>
+            <line x1="0" y1="0" x2="2" y2="4"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

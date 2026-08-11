@@ -1,0 +1,45 @@
+# ===== Environment Variables (IMPORTANT - API Keys) =====
+.env
+.env.local
+.env.*.local
+
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# ===== Virtual Environment =====
+.venv/
+venv/
+env/
+ENV/
+
+# ===== ChromaDB / Vector Database (generated data) =====
+chroma_db/
+*.sqlite3
+
+# ===== VS Code =====
+.vscode/
+*.code-workspace
+
+# ===== Jupyter Notebook =====
+.ipynb_checkpoints
+
+# ===== OS Generated Files =====
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ===== Logs =====
+*.log
+logs/
+
+# ===== Build / Distribution =====
+build/
+dist/
+*.egg-info/
+
+# ===== Model cache (if HuggingFace models download locally) =====
+.cache/
