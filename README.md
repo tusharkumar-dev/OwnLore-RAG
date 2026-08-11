@@ -403,7 +403,7 @@ ownlore-rag/
 The diagram below shows the full picture — document ingestion, shared retrieval/generation components, the four interaction modes, and the underlying application layers. The two flowcharts further down break the RAG Pipeline and Document Ingestion steps out in more detail.
 
 <p align="center">
-  <img src="assets/Architecture.svg" alt="OwnLore-RAG Architecture" width="100%">
+  <img src="assets/architecture.svg" alt="OwnLore-RAG Architecture" width="100%">
 </p>
 
 ### RAG Pipeline
