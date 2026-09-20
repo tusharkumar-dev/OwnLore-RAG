@@ -11,7 +11,7 @@ RERANKER_ENABLE = True
 LLM_PROVIDER = os.environ.get("LLM_PROVIDER", "groq")
 
 _MODEL_MAP = {
-    "groq":        "llama-3.1-8b-instant",
+    "groq":        "openai/gpt-oss-120b",
     "openai":      "gpt-4o",
     "ollama":      "llama3.1:latest",
     "gemini":      "gemini-3.5-flash",

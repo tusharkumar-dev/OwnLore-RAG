@@ -210,7 +210,7 @@ XAI_API_KEY=
 
 | Provider | `LLM_PROVIDER` value | Required env var | Default model | Get a key |
 |---|---|---|---|---|
-| Groq | `groq` | `GROQ_API_KEY` | `llama-3.1-8b-instant` | [console.groq.com](https://console.groq.com) |
+| Groq | `groq` | `GROQ_API_KEY` | `openai/gpt-oss-120b` | [console.groq.com](https://console.groq.com) |
 | Ollama | `ollama` | none (local) | `llama3.1:latest` | [ollama.ai](https://ollama.ai) |
 | OpenAI | `openai` | `OPENAI_API_KEY` | `gpt-4o` | [platform.openai.com](https://platform.openai.com) |
 | Gemini | `gemini` | `GOOGLE_API_KEY` | `gemini-3.5-flash` | [aistudio.google.com](https://aistudio.google.com) |
@@ -266,7 +266,7 @@ To change which model a provider uses by default, edit the `_MODEL_MAP` dictiona
 
 ```python
 _MODEL_MAP = {
-    "groq":        "llama-3.1-8b-instant",
+    "groq":        "openai/gpt-oss-120b",
     "openai":      "gpt-4o",
     "ollama":      "llama3.1:latest",
     "gemini":      "gemini-3.5-flash",
